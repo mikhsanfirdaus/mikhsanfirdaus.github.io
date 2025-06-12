@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang
+="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FhikChips | Nikmati setiap gigitan keripik dari FhikChips</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 relative">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-20">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-5xl font-bold text-orange-500">FhikChips</h1>
+      <nav class="space-x-6">
+        <a href="#produk" class="text-gray-600 hover:text-orange-500">Produk</a>
+        <a href="#tentang" class="text-gray-600 hover:text-orange-500">Tentang</a>
+        <a href="#kontak" class="text-gray-600 hover:text-orange-500">Kontak</a>
+        <button id="cartBtn" class="relative text-gray-600 hover:text-orange-500 focus:outline-none">
+          🛒
+          <span id="cartCount" class="absolute -top-2 -right-3 bg-orange-500 text-white text-xs font-bold rounded-full px-2 py-0">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-orange-100 py-20">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Temani waktu santai bersama keluarga dengan FhikChip</h2>
+      <p class="text-lg text-gray-600 mb-8">Temukan rasa yang anda inginkan, dan rasakan kenikmatan yang tak tertandingi</p>
+      <a href="#produk" class="bg-orange-500 text-white px-10 py-4 rounded-full hover:bg-orange-600 transition">Lihat Produk</a>
+    </div>
+  </section>
+
+  <!-- Produk -->
+  <section id="produk" class="py-16 bg-white">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-10">Produk Unggulan</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Produk 1 -->
+        <div class="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+          <img src="D:\\Web FhikChips\\Balado.jpeg" alt="Produk 1" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Keripik Singkong Balado</h4>
+            <p class="text-gray-600 mb-4">Keripik singkong tipis dan super renyah, diselimuti bumbu balado khas yang pedas-manis.</p>
+            <span class="text-orange-500 font-bold text-lg">Rp14.000</span>
+            <div class="mt-1">
+                <button class="w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition add-to-cart" data-name="Keripik Singkong Balado" data-price="14000">Tambah ke Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+          <img src="D:\\Web FhikChips\\Coklat.jpeg" alt="Produk 2" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Keripik Singkong Coklat</h4>
+            <p class="text-gray-600 mb-4">Dibuat dari singkong pilihan dan balutan coklat berkualitas.</p>
+            <span class="text-orange-500 font-bold text-lg">Rp15.000</span>
+            <div class="mt-4">
+                <button class="w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition add-to-cart" data-name="Keripik Singkong Coklat" data-price="15000">Tambah ke Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+          <img src="D:\\Web FhikChips\\Barbeque.jpeg" alt="Produk 3" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Keripik Singkong Barbeque</h4>
+            <p class="text-gray-600 mb-4">Barbeque dibuat dari singkong pilihan dan bumbu barbeque khas yang menggoda.</p>
+            <span class="text-orange-500 font-bold text-lg">Rp14.000</span>
+            <div class="mt-4">
+                <button class="w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition add-to-cart" data-name="Keripik Singkong Barbeque" data-price="14000">Tambah ke Keranjang</button>
+            </div>
+          </div>
+        </div>
+          <!-- Produk 4 -->
+          <div class="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+            <img src="D:\\Web FhikChips\\Keju.jpeg" alt="Produk 4" class="w-full h-60 object-cover">
+            <div class="p-4">
+              <h4 class="text-xl font-semibold mb-2">Keripik Singkong Keju</h4>
+              <p class="text-gray-600 mb-4">keripik singkong tipis yang dibalut dengan keju berkualitas.</p>
+              <span class="text-orange-500 font-bold text-lg">Rp14.000</span>
+              <div class="mt-4">
+                <button class="w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition add-to-cart" data-name="Keripik Singkong Keju" data-price="14000">Tambah ke Keranjang</button>
+              </div>
+            </div>
+          </div>
+          <!-- Produk 5 -->
+          <div class="bg-gray-100 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+            <img src="D:\\Web FhikChips\\Jagung.jpeg" alt="Produk 5" class="w-full h-60 object-cover">
+            <div class="p-4">
+              <h4 class="text-xl font-semibold mb-2">Keripik Singkong Jagung</h4>
+              <p class="text-gray-600 mb-4">Keripik Jagung dibuat dari jagung terbaik dan diolah dengan teknik khusus agar tetap renyah dan gurih.</p>
+              <span class="text-orange-500 font-bold text-lg">Rp14.000</span>
+              <div class="mt-4">
+                <button class="w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition add-to-cart" data-name="Keripik Singkong Jagung" data-price="14000">Tambah ke Keranjang</button>
+              </div>
+            </div>
+          </div>        
+      </div>
+    </div>
+  </section>
+
+  <!-- Sidebar Keranjang -->
+  <div id="cartSidebar" class="fixed top-0 right-0 h-full w-80 bg-white shadow-lg transform translate-x-full transition-transform z-30 overflow-auto">
+    <div class="flex justify-between items-center p-4 border-b">
+      <h4 class="text-xl font-bold">Keranjang Belanja</h4>
+      <button id="closeCart" class="text-gray-600 hover:text-orange-500 text-2xl font-bold focus:outline-none">&times;</button>
+    </div>
+    <div id="cartItems" class="p-4 space-y-4">
+      <p class="text-gray-500">Keranjang kosong.</p>
+    </div>
+    <div class="p-4 border-t">
+      <div class="flex justify-between text-lg font-semibold">
+        <span>Total:</span>
+        <span id="cartTotal">Rp0</span>
+      </div>
+      <button id="checkoutBtn" class="mt-4 w-full bg-orange-500 text-white py-3 rounded hover:bg-orange-600 transition disabled:opacity-50" disabled>Checkout</button>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-40 hidden z-20"></div>
+
+  <script>
+    const cartBtn = document.getElementById('cartBtn');
+    const cartSidebar = document.getElementById('cartSidebar');
+    const closeCart = document.getElementById('closeCart');
+    const overlay = document.getElementById('overlay');
+    const cartItemsContainer = document.getElementById('cartItems');
+    const cartCount = document.getElementById('cartCount');
+    const cartTotal = document.getElementById('cartTotal');
+    const checkoutBtn = document.getElementById('checkoutBtn');
+
+    let cart = [];
+
+    function formatRupiah(angka) {
+      return 'Rp' + angka.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    }
+
+    function updateCartUI() {
+      if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p class="text-gray-500">Keranjang kosong.</p>';
+        cartCount.textContent = '0';
+        cartTotal.textContent = 'Rp0';
+        checkoutBtn.disabled = true;
+        return;
+      }
+
+      cartCount.textContent = cart.reduce((acc, item) => acc + item.qty, 0);
+      cartTotal.textContent = formatRupiah(cart.reduce((acc, item) => acc + item.price * item.qty, 0));
+
+      cartItemsContainer.innerHTML = '';
+      cart.forEach((item, index) => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'flex justify-between items-center border rounded p-2';
+
+        itemDiv.innerHTML = `
+          <div>
+            <h5 class="font-semibold">${item.name}</h5>
+            <p class="text-sm text-gray-600">${formatRupiah(item.price)} x ${item.qty}</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <button class="text-orange-500 font-bold" onclick="changeQty(${index}, -1)">-</button>
+            <span>${item.qty}</span>
+            <button class="text-orange-500 font-bold" onclick="changeQty(${index}, 1)">+</button>
+            <button class="ml-4 text-red-500 font-bold" onclick="removeItem(${index})">&times;</button>
+          </div>
+        `;
+
+        cartItemsContainer.appendChild(itemDiv);
+      });
+
+      checkoutBtn.disabled = false;
+    }
+
+    function changeQty(index, delta) {
+      const item = cart[index];
+      item.qty += delta;
+      if (item.qty <= 0) {
+        cart.splice(index, 1);
+      }
+      updateCartUI();
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      updateCartUI();
+    }
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', () => {
+        const name = button.dataset.name;
+        const price = parseInt(button.dataset.price);
+
+        const existingIndex = cart.findIndex(item => item.name === name);
+        if (existingIndex >= 0) {
+          cart[existingIndex].qty++;
+        } else {
+          cart.push({ name, price, qty: 1 });
+        }
+        updateCartUI();
+      });
+    });
+
+    cartBtn.addEventListener('click', () => {
+      cartSidebar.classList.remove('translate-x-full');
+      overlay.classList.remove('hidden');
+    });
+
+    closeCart.addEventListener('click', () => {
+      cartSidebar.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    });
+
+    overlay.addEventListener('click', () => {
+      cartSidebar.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    });
+
+    checkoutBtn.addEventListener('click', () => {
+      alert('Terima kasih telah berbelanja di BrandKu! Proses checkout akan segera kami hubungi.');
+      cart = [];
+      updateCartUI();
+      cartSidebar.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    });
+
+    updateCartUI();
+  </script>
+
+</body>
+</html>
